@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(210, 202, 202);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+a:hover{
+    color: aqua;
+}
+.bi{
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 7px;
+}
+.bi:hover{
+    color: aqua;
+}
+.ham{
+    display: none;
+}
+.container{
+    margin-top: 90px;
+}
+.sub-container1{
+    margin-top: 30px;
+    height: 700px;
+    width: 45%;
+    /* border: 1px solid; */
+    background-color: rgb(236, 239, 240);
+    text-align: start;
+    line-height: 30px;
+}
+.sub-container1 > .bi{
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightgray;
+}
+.bi:hover{
+    color: aquamarine;
+}
+.sub-container2{
+    margin-top: 30px;
+    height: 700px;
+    width: 50%;
+    /* border: 1px solid; */
+    background-color: rgb(236, 239, 240);
+    text-align: start;
+    line-height: 40px;
+}
+.dropdown {
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+input{
+    width: 600px;
+    height: 40px;
+}
+textarea{
+    width: 600px;
+    height: 200px;
+}
+h6{
+    font-size: 1.2rem;
+}
+.sub-container{
+    display: flex;
+    gap: 30px;
+}
+button{
+    padding: 10px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: aqua;
+    color: white;
+    transition: 0.4s ease;
+}
+button:hover{
+    opacity: 0.7;
+}
+.footer{
+    margin-top: 5%;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(210, 202, 202) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer a{
+    color: aqua;
+}
+.icon > .bi{
+   border: 1px solid;
+   padding: 10px;
+   border-radius: 50%;
+}
+@media screen and (min-width : 0px) and (max-width : 575px) {
+    .sub-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-container1,.sub-container2{
+        width: 300px;
+    }
+    iframe,input,textarea{
+        width: 250px;
+    }
+    .ham{
+        display: block;
+    }
+    .header2{
+        display: none;
+    }  
+}
+@media screen and (min-width : 576px) and (max-width :769px) {
+    .sub-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-container1,.sub-container2{
+        width: 600px;
+    }
+    iframe,input,textarea{
+        width: 450px;
+    }
+    .ham{
+        display: block;
+    }
+    .header2{
+        display: none;
+    }  
+}
+@media screen and (min-width : 770px) and (max-width :990px){
+    .sub-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-container1,.sub-container2{
+        width: 400px;
+    }
+    iframe,input,textarea{
+        width: 350px;
+    }
+    .ham{
+        display: block;
+    }
+    .header2{
+        display: none;
+    }  
+}
+@media screen and (min-width : 991px) and (max-width :1200px){
+    .sub-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-container1,.sub-container2{
+        width: 480px;
+    }
+    iframe,input,textarea{
+        width: 350px;
+    }
+    .ham{
+        display: block;
+    }
+    .header2{
+        display: none;
+    }  
+}
